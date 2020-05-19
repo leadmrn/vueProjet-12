@@ -2,6 +2,22 @@
   padding: 20px;
 }
 
-@media(min-width: 768px){
-  
+#parallelogram {
+  display: inline-block;
+  border: 4px solid black;
+  text-transform: uppercase;
+  font-weight:bold;
+  font-style:italic;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: 'Montserrat';
+  animation: skewin  0.4s .3s forwards;
+}
+@keyframes skewin {
+from {
+transform: skew(0);
+}
+to {
+transform: skew(-20deg);
+}
 }
