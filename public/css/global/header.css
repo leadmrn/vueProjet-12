@@ -51,7 +51,8 @@
 }
 
 .slider {
-  background-color: #ccc;
+  background-color: var(--secondary-color);
+  transform: skew(-20deg);
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -62,7 +63,7 @@
 }
 
 .slider:before {
-  background-color: #fff;
+  background-color: var(--primary-color);;
   bottom: 4px;
   content: "";
   height: 26px;
@@ -73,17 +74,9 @@
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+  background-color: var(--secondary-color);;
 }
 
 input:checked + .slider:before {
   transform: translateX(26px);
-}
-
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
 }
