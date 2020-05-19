@@ -2,7 +2,7 @@
 
 body{
   margin: 0;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat' , sans-serif;
 }
 
 h1{
@@ -13,7 +13,7 @@ h2{
   display: inline-block;
   border: 4px solid black;
   text-transform: uppercase;
-  font-weight:bold;
+  font-weight:normal;
   font-style:italic;
   text-align: center;
   padding: 10px 20px;
