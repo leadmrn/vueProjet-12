@@ -2,6 +2,9 @@
   <div class="article__post" v-if='post'>
     <h1>{{ post.title }}</h1>
     <p>{{ post.body }}</p>
+    <div id="parallelogram">
+  <span>actus</span>
+</div>
   </div>
 </template>
 

@@ -27,9 +27,15 @@
   .listing__content{
     display: flex;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
   }
   .listing__article{
-    width: 48%;
+    width: 44%;
+  }
+}
+
+@media(min-width: 1200px){
+  .listing__article{
+    width: 29%;
   }
 }
