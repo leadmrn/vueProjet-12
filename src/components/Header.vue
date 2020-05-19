@@ -24,7 +24,6 @@ export default {
   },
   watch: {
     theme: function(e) {
-      console.log(e);
       e ? document.documentElement.setAttribute('data-theme', 'dark'): document.documentElement.setAttribute('data-theme', 'light');
     }
   }
