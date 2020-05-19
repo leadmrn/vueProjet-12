@@ -30,7 +30,7 @@ Amusez vous bien sur notre blog !</p>
           </div>
 
           <div class="home__button">
-            <router-link to="/listing">Voir tous les articles</router-link>
+            <h2><router-link to="/listing">Voir tous les articles</router-link></h2>
           </div>
     </div>
 
