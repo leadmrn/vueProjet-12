@@ -11,6 +11,9 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 50px;
   text-align: right;
+}
+
+.listing__page {
   opacity: 0;
   transform: translateY(50px) scale(0.8);
   transition: opacity 0.3s, transform 0.3s;
