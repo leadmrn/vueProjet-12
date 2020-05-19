@@ -1,0 +1,27 @@
+.home{
+  padding: 20px;
+}
+
+.home__text--desktop{
+  display: none;
+}
+
+@media(min-width: 768px){
+  .home__divs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .home__divs > div{
+    width: 48%;
+  }
+
+  .home__text--mobile{
+    display: none;
+  }
+
+  .home__text--desktop{
+    display: block;
+  }
+}
