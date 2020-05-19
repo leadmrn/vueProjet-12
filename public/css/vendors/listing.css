@@ -15,12 +15,29 @@
 
 .listing__page {
   opacity: 0;
-  transform: translateY(50px) scale(0.8);
   transition: opacity 0.3s, transform 0.3s;
 }
 
 .appears {
   opacity: 1;
+}
+
+.listing__page:nth-child(3n + 4) , .listing__page:first-child {
+
+  transform: translateX(-10%);
+}
+
+.appears:nth-child(3n + 4) , .listing__page:first-child {
+  transform: translateX(0%);
+}
+
+.listing__page:nth-child(3n+3) {
+
+  transform: translateX(10%);
+}
+
+.appears:nth-child(3n + 3) {
+  transform: translateX(0%);
 }
 
 .listing__article h4{
