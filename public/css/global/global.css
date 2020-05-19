@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,800i,900&display=swap');
 
+:root {
+  --primary-color:#FFF;
+  --secondary-color:black;
+}
+
+[data-theme="dark"] {
+  --primary-color:black;
+  --secondary-color:#FFF;
+}
+
 body{
   margin: 0;
   font-family: 'Montserrat' , sans-serif;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 h1{
@@ -11,7 +23,7 @@ h1{
 
 h2{
   display: inline-block;
-  border: 4px solid black;
+  border: 4px solid var(--secondary-color);;
   text-transform: uppercase;
   font-weight:normal;
   font-style:italic;
@@ -32,7 +44,7 @@ img{
 }
 
 a{
-  color: #000000;
+  color: var(--secondary-color);;
   text-decoration: none;
 }
 

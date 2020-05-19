@@ -14,7 +14,7 @@
 }
 
 .home__button h2  {
-  border: 2px solid black;
+  border: 2px solid var(--secondary-color);
   font-style: normal;
   font-size: 18px;
   text-transform: none;
