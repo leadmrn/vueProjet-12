@@ -1,8 +1,8 @@
 module.exports = {
 	pwa: {
 		name: 'vueProjetG12',
-		themeColor: '#4DBA87',
-		msTileColor: '#000000',
+		themeColor: '#000000',
+		msTileColor: '#FFF',
 		appleMobileWebAppCapable: 'yes',
 		appleMobileWebAppStatusBarStyle: 'black',
 		manifestOptions: {

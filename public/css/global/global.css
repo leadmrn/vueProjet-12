@@ -15,6 +15,7 @@ body{
   font-family: 'Montserrat' , sans-serif;
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  position: relative;
 }
 
 h1{
@@ -32,6 +33,7 @@ h2{
   font-family: 'Montserrat';
   animation: skewin  0.4s .3s forwards;
   margin-bottom: 30px;
+  z-index: -1;
 }
 
 p{
@@ -46,6 +48,10 @@ img{
 a{
   color: var(--secondary-color);;
   text-decoration: none;
+}
+
+.home, .article__post, .listing{
+  padding-top: 130px;
 }
 
 @media(min-width: 1200px){

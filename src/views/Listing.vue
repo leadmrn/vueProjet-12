@@ -39,18 +39,11 @@ export default {
   },
 
   methods: {
-    onWaypoint ({el, going, direction }) {
-      console.log(el);
+    onWaypoint ({el, going}) {
       // going: in, out
-      // direction: top, right, bottom, left
       if (going === this.$waypointMap.GOING_IN) {
-        console.log('waypoint going in!');
         el.classList.add('appears')
 
-      }
- 
-      if (direction === this.$waypointMap.DIRECTION_TOP) {
-        console.log('waypoint going top!')
       }
     }
   }

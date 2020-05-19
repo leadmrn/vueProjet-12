@@ -1,16 +1,24 @@
 <template>
   <div class="header">
-    <h3 class="header__logo"><router-link to="/">Boobagarre</router-link></h3>
-    <div class="theme-switch-wrapper">
-      <label class="theme-switch" for="checkbox">
-          <input v-model="theme" type="checkbox" id="checkbox" />
-          <div class="slider round"></div>
-      </label>
-    </div>
-    <div class=header__icon>
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="header__content">
+      <h3 class="header__logo"><router-link to="/">Boobagarre</router-link></h3>
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input v-model="theme" type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+      </div>
+      <div class="header__icon">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <nav class="header__menu">
+        <ul>
+          <li><router-link to="/">Accueil</router-link></li>
+          <li><router-link to="/listing">Actualités</router-link></li>
+        </ul>
+      </nav>
     </div>
   </div>
 </template>
@@ -21,6 +29,15 @@ export default {
     return {
       theme: null
     }
+  },
+  mounted () {
+    var iconMenu = document.querySelector('.header__icon');
+    var menu = document.querySelector('.header__menu');
+    console.log(iconMenu)
+    iconMenu.addEventListener('click', ()=>{
+      iconMenu.classList.toggle('visible');
+      menu.classList.toggle('visible');
+    })
   },
   watch: {
     theme: function(e) {
