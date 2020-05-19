@@ -24,4 +24,12 @@
   .home__text--desktop{
     display: block;
   }
+
+  .container__actu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
 }

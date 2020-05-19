@@ -14,22 +14,26 @@
 Notre blog  va vous exposer plusieurs de ses confilts.<br>
 Amusez vous bien sur notre blog !</p>
     </div>
-    <h2>ACTUS</h2>
 
-    <div class="listing__content">
-      <div class="listing__article" v-for="post in posts" :key="post.id">
-        <h4>{{ post.title }}</h4>
-        <div>
-          <router-link :to="`/article/${ post.id }`">
-            En savoir plus
-          </router-link>
-        </div>
-      </div>
+    <div class="container__actu">
+          <h2>ACTUS</h2>
+
+          <div class="listing__content">
+            <div class="listing__article" v-for="post in posts" :key="post.id">
+              <h4>{{ post.title }}</h4>
+              <div>
+                <router-link :to="`/article/${ post.id }`">
+                  En savoir plus
+                </router-link>
+              </div>
+            </div>
+          </div>
+
+          <div class="home__button">
+            <router-link to="/listing">Voir tous les articles</router-link>
+          </div>
     </div>
 
-    <div class="home__button">
-      <router-link to="/listing">Voir tous les articles</router-link>
-    </div>
   </div>
 </template>
 
