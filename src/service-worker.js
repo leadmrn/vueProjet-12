@@ -37,12 +37,10 @@ workbox.routing.registerRoute(
 // [{ title: "test", url: "http://127.0.0.1:8887/#/" }]
 
 self.addEventListener('push', (event) => {
-	let pushMessage = event.data.json()
-
-	clickUrl = pushMessage[0].url
+	let pushMessage = event.data.text()
 
 	const options = {
-		body: pushMessage[0].title,
+		body: pushMessage,
 		icon: './img/apple-touch-icon-60x60.png',
 		image: './img/apple-touch-icon-60x60.png',
 		vibrate: [200,100,200,100],
@@ -50,14 +48,14 @@ self.addEventListener('push', (event) => {
 	}
 
 	event.waitUntil(
-		self.registration.showNotification(pushMessage[0].title, options)
+		self.registration.showNotification(pushMessage, options)
 	);
 })
 
 self.addEventListener('notificationclick', (event)=>{
 	event.notification.close()
 
-	const promiseChain = clients.openWindow(clickUrl);
+	const promiseChain = clients.openWindow('https://boobagarre.netlify.app/#/');
 	event.waitUntil(
 		promiseChain
 	)
