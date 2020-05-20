@@ -15,8 +15,8 @@
       </div>
       <nav class="header__menu">
         <ul>
-          <li><router-link to="/">Accueil</router-link></li>
-          <li><router-link to="/listing">Actualités</router-link></li>
+          <li v-on:click="closeMenu"><router-link to="/">Accueil</router-link></li>
+          <li v-on:click="closeMenu"><router-link to="/listing">Actualités</router-link></li>
         </ul>
       </nav>
     </div>
@@ -41,6 +41,14 @@ export default {
   watch: {
     theme: function(e) {
       e ? document.documentElement.setAttribute('data-theme', 'dark'): document.documentElement.setAttribute('data-theme', 'light');
+    }
+  },
+  methods: {
+    closeMenu: function() {
+
+    document.querySelector('.header__icon').classList.remove('visible');
+    document.querySelector('.header__menu').classList.remove('visible');
+      
     }
   }
 }
