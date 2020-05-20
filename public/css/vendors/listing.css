@@ -23,24 +23,6 @@
   opacity: 1;
 }
 
-.listing__page:nth-child(3n + 4) , .listing__page:first-child {
-
-  transform: translateX(-10%);
-}
-
-.appears:nth-child(3n + 4) , .listing__page:first-child {
-  transform: translateX(0%);
-}
-
-.listing__page:nth-child(3n+3) {
-
-  transform: translateX(10%);
-}
-
-.appears:nth-child(3n + 3) {
-  transform: translateX(0%);
-}
-
 .listing__article h4{
   text-align: left;
   font-size: 18px;

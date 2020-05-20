@@ -22,7 +22,7 @@ export default {
       intersectionOptions: {
         root: null,
         rootMargin: '0px 0px 0px 0px',
-        threshold: [.7, 1] // [0.25, 0.75] if you want a 25% offset!
+        threshold: [.7, 1]
       } 
     }
     
@@ -40,7 +40,6 @@ export default {
 
   methods: {
     onWaypoint ({el, going}) {
-      // going: in, out
       if (going === this.$waypointMap.GOING_IN) {
         el.classList.add('appears')
 
