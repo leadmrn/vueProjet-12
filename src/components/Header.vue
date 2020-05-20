@@ -33,7 +33,6 @@ export default {
   mounted () {
     var iconMenu = document.querySelector('.header__icon');
     var menu = document.querySelector('.header__menu');
-    console.log(iconMenu)
     iconMenu.addEventListener('click', ()=>{
       iconMenu.classList.toggle('visible');
       menu.classList.toggle('visible');
